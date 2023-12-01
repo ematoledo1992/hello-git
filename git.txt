@@ -37,3 +37,21 @@
 
 //para moverse en ramas + nombre de la rama
 	git switch login
+
+//para ver lo que hace en la otra rama (ojo que podes modificar los datos) git merge + nombre rama
+	git merge master 
+
+//para guardar los datos temporalmente
+	git stash
+
+//para ver los stash
+	git stash list
+
+//para traer lo que almacene temporalmente 
+	git stash pop
+
+//para borrar el stash 
+	git stash drop
+
+//borrar rama (git branch -d + nombre rama)
+	git branch -d login 
