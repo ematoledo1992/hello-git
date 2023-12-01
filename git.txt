@@ -1,0 +1,39 @@
+//primeramente creo el proyecto
+//en la consola de git ingreso 	
+	git init
+
+//ingreso para corroborar el estado del proyecto
+	git status
+
+// para ingresar el proyecto en git ingresar
+	git add nombredelproyecto.extension (hellogit.py)
+	git add . (agrega todo lo que tenga pendiente)
+
+//con el siguiente comando se le agrega el primer comentario
+	git commit -m "Este es mi primer commit"
+
+//para ir viendo lo que se va guardando
+	git log
+
+//para moverse entre las ramas
+//volver a un punto de restauracion antes de guardar cambios en git
+	git checkout nombreproyecto.extension (hellogit.py)
+
+//para no guardar los cambios despues de un git checkout
+	git reset
+
+//si tienes archivos del sistema que no quieres guardar
+	touch .gitignore
+	git commit -m "Añado el .gitignore"
+
+//para ver todos los historial de los log aunq ya los hayas borrado
+	fit reflog
+
+//para poner un punto con un tag
+	git tag nombre (git tag punto_1)
+
+//crear una nueva rama 
+	git branch nombre (git branch login)
+
+//para moverse en ramas + nombre de la rama
+	git switch login
