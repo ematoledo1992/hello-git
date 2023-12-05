@@ -55,3 +55,14 @@
 
 //borrar rama (git branch -d + nombre rama)
 	git branch -d login 
+
+2.47.00
+
+//para configurar la configuracion de git a github
+1)  ls -al ~/.ssh
+2)  cd .ssh/
+3)  ssh-keygen -t ed25519 -C "ematoledo1992@gmail.com" //y luego colocar el nombre del archivo y contraseña (si queres)
+4)  clip < ~/.ssh/id_rsa.pub
+5)  //en GITHUB https://github.com/settings/keys poner NEW SSH KEY y agregar en key lo que hay en id_rsa.pub (abrir con blocdenotas)
+6)   ssh -T git@github.com //autenticarse
+
